@@ -5,7 +5,198 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-04-16T06:40:47Z</updated>
+  <updated>2018-04-16T11:40:45Z</updated>
+  <entry>
+    <title>What's new in Spring Cloud GCP 1.0.0 Milestone 3</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/04/16/what-s-new-in-spring-cloud-gcp-1-0-0-milestone-3" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2018-04-13:3250</id>
+    <updated>2018-04-16T11:40:45Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Dear Spring Community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="http://cloud.spring.io/spring-cloud-gcp/"&gt;Spring Cloud GCP&lt;/a&gt; is a set of Spring Boot starters that is designed to help you leverage Google Cloud Platform managed services directly from Spring Boot, allowing you to use Spring Messaging for Cloud Pub/Sub, Spring Resource for Cloud Storage, Spring Cloud Sleuth for Stackdriver Trace, Spring Data with Cloud SQL, and more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We&amp;#8217;ve just released Spring Cloud GCP &lt;code&gt;1.0.0.M3&lt;/code&gt;.
+Check out what&amp;#8217;s new since the previous &lt;a href="https://spring.io/blog/2018/02/07/spring-cloud-for-google-cloud-platform-1-0-milestone-2-available"&gt;Milestone 2&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-boot-2-0-ga-support"&gt;&lt;a class="anchor" href="#spring-boot-2-0-ga-support"&gt;&lt;/a&gt;Spring Boot 2.0 GA Support&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Cloud GCP &lt;code&gt;1.0.0.M3&lt;/code&gt; is now up to date to work with Spring Boot &lt;code&gt;2.0.1.RELEASE&lt;/code&gt; and Spring Cloud &lt;code&gt;Finchley.M9&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To use Spring Cloud GCP &lt;code&gt;1.0.0.M3&lt;/code&gt;, simply import the BOM in your Spring Boot &lt;code&gt;2.0&lt;/code&gt; project:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencyManagement&amp;gt;
+    &amp;lt;dependencies&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-cloud-gcp-dependencies&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;1.0.0.M3&amp;lt;/version&amp;gt;
+            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
+            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+    &amp;lt;/dependencies&amp;gt;
+&amp;lt;/dependencyManagement&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-initializr"&gt;&lt;a class="anchor" href="#spring-initializr"&gt;&lt;/a&gt;Spring Initializr&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can now find Spring Cloud GCP in the Spring Initializr!
+Head to &lt;a href="http://start.spring.io/" class="bare"&gt;http://start.spring.io/&lt;/a&gt; and look for "GCP" related starters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For example, to use Cloud Pub/Sub for messaging, simply add the GCP Messaging dependencies in the Initializr. This starter also contains the Spring Integration channel adapters, as well as the Spring Cloud Stream Pub/Sub binder.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://raw.githubusercontent.com/spring-cloud/spring-cloud-gcp/master/spring-cloud-gcp-docs/src/main/asciidoc/images/GCP%20on%20Spring%20Initializr.png" alt="GCP%20on%20Spring%20Initializr"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Currently, only the base support, messaging, and storage are in the Initializr menu.
+Refer to the &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M3/reference/htmlsingle/"&gt;Spring Cloud GCP Reference&lt;/a&gt; documentation to add other starters.
+We are working to add more to Initializr.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-data-spanner"&gt;&lt;a class="anchor" href="#spring-data-spanner"&gt;&lt;/a&gt;Spring Data Spanner&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can now build multi-regional Spring Boot applications backed by &lt;a href="https://cloud.google.com/spanner/"&gt;Google Cloud Spanner&lt;/a&gt; - a globally-distributed, strongly consistent, relational database.
+With &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M3/reference/htmlsingle/#_spring_data_spanner"&gt;Spring Data Spanner&lt;/a&gt;, you can now annotate your POJOs for object mapping to Spanner tables. It supports:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spanner Transactions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paging and Sorting Repository&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REST Repository&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Query by method name convention, annotation, and named queries!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Table(name = "traders")
+public class Trader {
+        @PrimaryKey
+        @Column(name = "trader_id")
+        String traderId;
+
+        String firstName;
+
+        String lastName;
+}
+
+public interface TraderRepository
+                      extends PagingAndSortingRepository&amp;lt;Trader, String&amp;gt; {
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="pivotal-cloud-foundry-service-broker"&gt;&lt;a class="anchor" href="#pivotal-cloud-foundry-service-broker"&gt;&lt;/a&gt;Pivotal Cloud Foundry Service Broker&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you are using &lt;a href="https://pivotal.io/platform"&gt;Pivotal Cloud Foundry&lt;/a&gt; and the &lt;a href="https://docs.pivotal.io/partners/gcp-sb/index.html"&gt;Google Cloud Platform Service Broker&lt;/a&gt;, Spring Boot GCP Starters can automatically consume GCP Service Broker bindings and credentials to configure your application.
+The following services are supported:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Storage&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Pub/Sub&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Spanner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stackdriver Trace&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you are not familiar with Spring Boot on Cloud Foundry, checkout the &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cloud-deployment-cloud-foundry"&gt;Spring Boot Cloud Foundry Deployment&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For example, you can provision and bind Stackdriver Trace service credentials via the Service Broker:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="literalblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;$ cf create-service google-stackdriver-trace default mytrace
+$ cf bind-service myapp mytrace&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In your application, add the Spring Cloud GCP Trace starter:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-cloud-gcp-starter-trace&amp;lt;/artifactId&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;When you deploy your application into PCF with this service binding, the starter will automatically read the configuration from the &lt;code&gt;VCAP_SERVICES&lt;/code&gt; environment variable.
+The Spring Cloud Trace starter will automatically forward distributed trace data to Stackdriver Trace.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="literalblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;$ cf push myapp -p path/to/my.jar&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://raw.githubusercontent.com/spring-cloud/spring-cloud-gcp/master/spring-cloud-gcp-docs/src/main/asciidoc/images/Stackdrive%20trace.png" alt="Stackdrive Trace"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Stackdriver Trace is part of Stackdriver Application Performance Management (APM) tools. Learn more from the &lt;a href="https://cloudplatform.googleblog.com/2018/03/introducing-Stackdriver-APM-and-Stackdriver-Profiler-Distributed-tracing-debugging-and-profiling-for-your-performance-sensitive-applications.html"&gt;Stackdriver APM announcement&lt;/a&gt; blog.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="try-it-out"&gt;&lt;a class="anchor" href="#try-it-out"&gt;&lt;/a&gt;Try it out!&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Check out the &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/tree/master/spring-cloud-gcp-samples"&gt;code samples&lt;/a&gt; in the &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/"&gt;Spring Cloud GCP GitHub repository&lt;/a&gt;, read the Spring Cloud GCP Reference documentation for more details, and try it hands on with &lt;a href="https://codelabs.developers.google.com/spring"&gt;code labs&lt;/a&gt;.
+Most importantly, let us know your feedback and report any issues.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;From the Spring Cloud GCP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-gcp"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/issues"&gt;issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M3/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tool Suite 3.9.4 released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/04/16/spring-tool-suite-3-9-4-released" />
@@ -942,27 +1133,5 @@ inputSource.poll(System.out::println);
 &lt;p&gt;Spring Boot 1.5.11 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/97?closed=1"&gt;over 70 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.11.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Vault 1.1.2 and 2.0.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/04/05/spring-vault-1-1-2-and-2-0-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2018-04-05:3231</id>
-    <updated>2018-04-05T07:48:56Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, I&amp;#8217;d like to announce the availability of Spring Vault service releases 1.1.2 and 2.0.1, available from Maven Central.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Both releases primarily deliver bug fixes and dependency version updates along with some minor improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For a complete list of changes see the changelogs of &lt;a href="http://docs.spring.io/spring-vault/docs/1.1.2.RELEASE/changelog.txt"&gt;1.1.2 RELEASE&lt;/a&gt; and &lt;a href="http://docs.spring.io/spring-vault/docs/2.0.1.RELEASE/changelog.txt"&gt;2.0.1 RELEASE&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-vault/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/1.1.2.RELEASE/reference/html/"&gt;Documentation for 1.1.2.RELEASE&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/2.0.1.RELEASE/reference/html/"&gt;Documentation for 2.0.1.RELEASE&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-vault"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

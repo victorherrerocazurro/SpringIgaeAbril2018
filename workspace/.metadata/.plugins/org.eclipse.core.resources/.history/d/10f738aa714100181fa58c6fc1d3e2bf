@@ -1,0 +1,14 @@
+package es.igae.holamundo;
+
+import java.util.logging.Logger;
+
+public class AplicacionSpringXml {
+
+	private static Logger logger = Logger.getLogger(AplicacionSpringXml.class.getName());
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

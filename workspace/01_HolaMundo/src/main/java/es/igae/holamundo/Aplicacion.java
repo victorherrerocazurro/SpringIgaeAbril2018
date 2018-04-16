@@ -10,7 +10,7 @@ public class Aplicacion {
 
 		Coche coche = new Coche(new ConductorFernandoAlonso());
 		
-		logger.info(coche.getNombreDeConductor());
+		logger.warning(coche.getNombreDeConductor());
 
 	}
 

@@ -1,0 +1,12 @@
+package es.igae.holamundo;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationContext {
+
+	public Coche coche() {
+		return new Coche(conductor);
+	}
+	
+}

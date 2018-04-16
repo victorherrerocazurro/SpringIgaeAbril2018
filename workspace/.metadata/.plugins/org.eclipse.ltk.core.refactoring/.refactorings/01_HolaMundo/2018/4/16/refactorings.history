@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;es.igae.holamundo.ConductorBasico&apos; to &apos;ConductorFernandoAlonso&apos;&#x0D;&#x0A;- Original project: &apos;01_HolaMundo&apos;&#x0D;&#x0A;- Original element: &apos;es.igae.holamundo.ConductorBasico&apos;&#x0D;&#x0A;- Renamed element: &apos;es.igae.holamundo.ConductorFernandoAlonso&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ConductorBasico&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;es.igae.holamundo{ConductorBasico.java[ConductorBasico" matchStrategy="1" name="ConductorFernandoAlonso" qualified="false" references="true" similarDeclarations="false" stamp="1523877381588" textual="false" version="1.0"/>
+</session>

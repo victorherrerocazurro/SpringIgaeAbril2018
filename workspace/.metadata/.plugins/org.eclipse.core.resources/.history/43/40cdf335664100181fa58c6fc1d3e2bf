@@ -1,0 +1,6 @@
+package es.igae.holamundo;
+
+public class Coche {
+	//Dependencias = Atributos de clase
+	private Conductor conductor;
+}

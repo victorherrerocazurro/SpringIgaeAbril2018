@@ -1,0 +1,13 @@
+package es.igae.holamundo;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+
+		Coche coche = new Coche();
+		
+		coche.getNombreDeConductor();
+
+	}
+
+}

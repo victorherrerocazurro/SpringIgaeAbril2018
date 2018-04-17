@@ -5,7 +5,28 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-04-16T11:40:45Z</updated>
+  <updated>2018-04-16T16:09:53Z</updated>
+  <entry>
+    <title>Spring Cloud Task 2.0.0.RC1 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/04/16/spring-cloud-task-2-0-0-rc1-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Michael Minella</name>
+    </author>
+    <id>tag:spring.io,2018-04-16:3252</id>
+    <updated>2018-04-16T16:09:53Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Cloud Task 2.0.0.RC1 is now available on Github and the Pivotal download repository. Many thanks to all of those who contributed to this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new" class="anchor" name="what-rsquo-s-new"&gt;&lt;/a&gt;What&amp;rsquo;s New?&lt;/h2&gt;
+&lt;p&gt;This release includes upgrades to existing dependencies as well as some nice new features. Let&amp;rsquo;s take a look at what&amp;rsquo;s new in this release.&lt;/p&gt;&lt;h3&gt;&lt;a href="#compatibility-with-spring-cloud-stream-2-0" class="anchor" name="compatibility-with-spring-cloud-stream-2-0"&gt;&lt;/a&gt;Compatibility with Spring Cloud Stream 2.0&lt;/h3&gt;
+&lt;p&gt;Spring Cloud Stream 2.0 was &lt;a href="https://spring.io/blog/2018/04/10/announcing-general-availability-of-spring-cloud-stream-elmhurst-release-2-0-0-release"&gt;released a few days ago&lt;/a&gt; and provides a collection of impressive enhancements. Spring Cloud Task is updated and supports Spring Cloud Stream 2.0&lt;/p&gt;&lt;h3&gt;&lt;a href="#multiple-datasource-sample" class="anchor" name="multiple-datasource-sample"&gt;&lt;/a&gt;Multiple DataSource Sample&lt;/h3&gt;
+&lt;p&gt;A common point of confusion for Spring Cloud Task is how to configure a task application when using multiple DataSource beans. In this release, we provided a sample that demonstrates how that should work. You can find that sample &lt;a href="https://github.com/spring-cloud/spring-cloud-task/tree/master/spring-cloud-task-samples/multiple-datasources"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#features-release-in-previous-milestones" class="anchor" name="features-release-in-previous-milestones"&gt;&lt;/a&gt;Features Release in Previous Milestones&lt;/h3&gt;
+&lt;p&gt;Beyond the above new features, other features that are included in the 2.0 line include the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Restricting task instances: Via configuration, you can prevent multiple instances of a task from executing.&lt;/li&gt;
+  &lt;li&gt;Batch jobs fail the task: By setting the &lt;code&gt;spring.cloud.task.batch.failOnJobFailure&lt;/code&gt; flag to &lt;code&gt;true&lt;/code&gt;, if a Spring Batch job executed within the task fails, the task fails as well.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What Do You Think?&lt;/h2&gt;
+&lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://gitter.im/spring-cloud/spring-cloud-task"&gt;Gitter&lt;/a&gt;, or directly via Twitter &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/docs/2.0.0.RC1/reference/htmlsingle/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>What's new in Spring Cloud GCP 1.0.0 Milestone 3</title>
     <link rel="alternate" href="https://spring.io/blog/2018/04/16/what-s-new-in-spring-cloud-gcp-1-0-0-milestone-3" />
@@ -718,7 +739,7 @@ class StatementGenerator {&#xD;
   &lt;li&gt;&lt;a href="https://pivotal.io/security/cve-2018-1273"&gt;https://pivotal.io/security/cve-2018-1273&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://pivotal.io/security/cve-2018-1274"&gt;https://pivotal.io/security/cve-2018-1274&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Spring Boot 1.5.11 and 2.0.1 already pull in the above Spring Data versions, including the fixes that were &lt;a href="https://spring.io/blog/2018/04/05/spring-boot-2-0-1-available-now"&gt;released last week&lt;/a&gt;, and are now also available for use.&lt;/p&gt;
+&lt;p&gt;Spring Boot 1.5.11 (superseded by 1.5.12 due to &lt;a href="https://spring.io/blog/2018/04/09/cve-2018-1275-address-partial-fix-for-cve-2018-1270"&gt;CVE-2018-1275&lt;/a&gt;) and 2.0.1 already pull in the above Spring Data versions, including the fixes that were &lt;a href="https://spring.io/blog/2018/04/05/spring-boot-2-0-1-available-now"&gt;released last week&lt;/a&gt;, and are now also available for use.&lt;/p&gt;
 &lt;p&gt;Please review the information in the CVE reports and upgrade immediately.&lt;/p&gt;</content>
   </entry>
   <entry>
@@ -1119,19 +1140,5 @@ inputSource.poll(System.out::println);
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
 &lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.5.11 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/04/05/spring-boot-1-5-11-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2018-04-05:3232</id>
-    <updated>2018-04-05T11:15:58Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I am pleased to announce that Spring Boot 1.5.11 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 1.5.11 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/97?closed=1"&gt;over 70 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.11.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

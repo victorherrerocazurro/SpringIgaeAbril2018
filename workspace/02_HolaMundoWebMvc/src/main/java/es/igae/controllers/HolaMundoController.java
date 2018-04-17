@@ -3,13 +3,10 @@ package es.igae.controllers;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.View;
 
 import es.igae.services.Servicio;
 
@@ -20,10 +17,10 @@ import es.igae.services.Servicio;
 public class HolaMundoController {
 
 	//Esta anotacion indica a Spring que busque un Bean de tipo View
-	@Autowired
+	//@Autowired
 	//Y el Bean de tipo View debe tener como Id viewSaludo 
-	@Qualifier("viewSaludo")
-	private View viewSaludo;
+	//@Qualifier("viewSaludo")
+	//private View viewSaludo;
 	
 	@Autowired
 	private Servicio servicio;
@@ -39,7 +36,7 @@ public class HolaMundoController {
 	//http://localhost:8080/miApp/Saludo?name=Victor&apellido=Herrero
 	@RequestMapping(method = RequestMethod.GET)
 	//public View saludo(Model modelo, @RequestParam(name="name") String nombre) {
-	public View saludo(Map<String, Object> modelo, @RequestParam(name="name") String nombre) {
+	public String saludo(Map<String, Object> modelo, @RequestParam(name="name") String nombre) {
 		
 		//Invocamos la logica e negocio
 		String saludo = servicio.getSaludo(nombre);
@@ -48,7 +45,11 @@ public class HolaMundoController {
 		//modelo.addAttribute("saludo", saludo);
 		modelo.put("saludo", saludo);
 		
-		return viewSaludo;
+		//Retorno para cuando empleamos View
+		//return viewSaludo;
+		
+		//Retorno para cuando empleamos String
+		return "saludo";
 	}
 
 	// Aqui tenemos que establecer el filtro para llegar a acceder este codigo

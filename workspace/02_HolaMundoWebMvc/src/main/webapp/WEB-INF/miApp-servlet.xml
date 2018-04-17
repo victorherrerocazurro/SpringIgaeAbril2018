@@ -22,6 +22,23 @@
 	
 	<!-- Views -->
 	
+	<bean id="viewSaludo" class="org.springframework.web.servlet.view.InternalResourceView">
+		<constructor-arg name="url" value="/WEB-INF/views/saludo.jsp"/>
+	</bean>
+	
 	<!-- ViewResolvers -->
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<constructor-arg name="prefix" value="/WEB-INF/views/"/>
+		<constructor-arg name="suffix" value=".jsp"/>
+	</bean>	
+	
+	<!-- Servicios de la capa del Back -->
+	
+	<!-- 
+	<bean class="es.igae.services.ServicioImpl"/>
+	 -->
+	 
+	<context:component-scan base-package="es.igae.services"/>
 
 </beans>

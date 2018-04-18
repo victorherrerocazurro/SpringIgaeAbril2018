@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="derby_server-162d8c27e12-444e1f81fb45b4c9" provider="generic" driver="derby_server" name="Derby - jndi" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="localhost" port="1527" server="" database="jndi" url="jdbc:derby://localhost:1527/jndi;create=true" user="admin" password="EgALKU8jpQ==" type="dev">
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="false">
+				<property name="sshConnectTimeout" value="10000"/>
+				<property name="port" value="22"/>
+				<property name="implementation" value="jsch"/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="false">
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>

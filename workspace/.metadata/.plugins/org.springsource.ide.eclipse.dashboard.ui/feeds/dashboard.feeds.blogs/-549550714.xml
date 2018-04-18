@@ -5,7 +5,150 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-04-16T16:09:53Z</updated>
+  <updated>2018-04-18T02:20:22Z</updated>
+  <entry>
+    <title>Spring Tips: Redis</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/04/18/spring-tips-redis" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-04-18:3255</id>
+    <updated>2018-04-18T02:20:22Z</updated>
+    <content type="html">&lt;p&gt;speaker: &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this installment we look at the many facets of Redis, the distributed data structure server. Spring supports Redis through the Spring Cache abstraction, Spring Session, the Spring message-listener container abstraction, and through the Spring Data Redis module.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_M8xoagybzU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - April 17th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/04/17/this-week-in-spring-april-17th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-04-17:3254</id>
+    <updated>2018-04-17T12:21:32Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in Paris, France and I&amp;rsquo;ll be in Mainz, Germany, next week for JAX and Linz, Austria for the DevOne event. If you&amp;rsquo;re in any of these places then &lt;a href="http://twitter.com/Starbuxman"&gt;don&amp;rsquo;t hesitate to reach out&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got so much to cover so let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Cloud Task and Spring Batch &lt;a href="https://spring.io/blog/2018/04/16/spring-cloud-task-2-0-0-rc1-is-now-available"&gt;lead Michael Minella just announced Spring Cloud Task 2.0.0.RC1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Artem Bilan looks &lt;a href="https://spring.io/blog/2018/04/16/what-s-new-in-spring-cloud-gcp-1-0-0-milestone-3"&gt;at what&amp;rsquo;s new in the Spring Cloud GCP 1.0.0.M3 release&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Tool Suite lead Martin Lippert just &lt;a href="https://spring.io/blog/2018/04/16/spring-tool-suite-3-9-4-released"&gt;announced Spring Tool Suite 3.9.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Boot lead Phil Webb &lt;a href="https://github.com/spring-io/spring-javaformat/"&gt;is cooking up a very interesting project to ensure code-formatting consistency for all Spring Boot projects&lt;/a&gt;. Interesting! (and still super early days yet..) Think of this as the Java and Spring Boot equivalent of &lt;code&gt;gofmt&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Mark Paluch just &lt;a href="https://spring.io/blog/2018/04/13/spring-data-lovelace-m2-released"&gt;announced Spring Data Lovelace M2&lt;/a&gt;. This release ships with updates for all store modules that contain new features, improvements, and bug fixes. Notable changes include: MongoDB 3.6 support for Change Streams, $jsonSchema, and Client Sessions (in preparation for MongoDB Transactions); Apache Cassandra mapping improvements for Map and Tuple Types, along with newly introduced Lifecycle Callbacks; Upgrade to Apache Solr 7; Improved Connection Handling for reactive Redis and static Master/Slave use; SCAN support for Redis Cluster; List support for Spring Data JDBC; Composable repositories support via CDI; and an t increment to Spring Data Solr to a new major version number, 4.0 M2, as we upgraded from SolrJ 6.6.2 to 7.2.1.&lt;/li&gt;
+  &lt;li&gt;There&amp;rsquo;s some interesting changes &lt;a href="https://github.com/spring-projects/spring-framework/commit/97ee94f4ca7e1d0c6f7e218e0ba8448940b7ba24"&gt;afoot in the programmatic bean definition Kotlin DSL!&lt;/a&gt; The new DSL supports injecting multiple bean definitions and accessing the Spring &lt;code&gt;Environment&lt;/code&gt;, among other things.&lt;/li&gt;
+  &lt;li&gt;Springg Security OAuth lead Joe Grandja just announced Security OAuth 2.3.2.RELEASE &lt;a href="https://spring.io/blog/2018/04/12/spring-security-oauth-2-3-2-released"&gt;fixing a minor runtime incompatability with Redis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Our very own Jakub Pilimon has a &lt;a href="https://spring.io/blog/2018/04/11/event-storming-and-spring-with-a-splash-of-ddd"&gt;nice post on &amp;ldquo;event-storming with a splash of domain-driven design.&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Mark Paluch shares details on new releases of Spring Data - Spring Data Ingalls SR11 and Kay SR - which include fixes for recently announced vulnerabilities. If you&amp;rsquo;re using Spring Boot 1.5.12 and 2.0.1 then they bring in the &lt;a href="https://spring.io/blog/2018/04/11/multiple-cve-reports-published-for-spring-data"&gt;appropriate Spring Data releases, as well&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hi Spring fans! Last week, in the latest &lt;em&gt;Spring Tips&lt;/em&gt; installment, I look at &lt;a href="https://spring.io/blog/2018/04/11/spring-tips-the-cloud-foundry-java-client"&gt;the reactive Cloud Foundry Java client&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a list of must-read books &lt;a href="http://javarevisited.blogspot.fr/2018/04/5-spring-framework-books-experienced-Java-developers-2018.html?m=1"&gt;for Spring developers in 2018&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Jenkins X is a new offering from CloudBees that supports smart continuous delivery of applications. &lt;a href="https://www.youtube.com/watch?v=kPes3rvT1UM&amp;feature=youtu.be"&gt;In this example it offers an integrated CI/CD pipeline for Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Flowbable BPMN engine has a &lt;a href="https://blog.flowable.org/2018/04/11/the-road-to-spring-boot-2-0/"&gt;nice post on the journey they took to Spring Boot 2.0 support&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This new project - &lt;a href="https://codecentric.github.io/chaos-monkey-spring-boot/"&gt;Chaos Monkey from Spring Boot&lt;/a&gt; - from Codecentric supports the principles of chaos engineering in Spring Boot-based services. It helps you answer questions that your tests don&amp;rsquo;t, like: &amp;ldquo;will our fallbacks work?&amp;rdquo;; &amp;ldquo;how does the application behave with network latency?&amp;rdquo;; &amp;ldquo;what if one of our services breaks down?&amp;rdquo;; and &amp;ldquo;Service Discovery works, but is our client-side-load-balancing also working?&amp;rdquo; If Spring Boot Chaos Monkey is on your classpath and activated with profile name &lt;code&gt;chaos-monkey&lt;/code&gt;, it will automatically scan your application for all classes annotated with any of the following Spring annotations: &lt;code&gt;@Controller&lt;/code&gt;, &lt;code&gt;@RestController&lt;/code&gt;, &lt;code&gt;@Service&lt;/code&gt;, and &lt;code&gt;@Repository&lt;/code&gt;. Then, you configure different &amp;ldquo;assaults&amp;rdquo; which will, well, assault your components and try to break them. This is &lt;em&gt;so&lt;/em&gt; cool!&lt;/li&gt;
+  &lt;li&gt;This is an exhaustive review of a simple concept: &lt;a href="http://www.baeldung.com/spring-boot-context-path"&gt;how to change the context-path of a Spring Boot application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love this image, &amp;ldquo;Deployment g-forces,&amp;rdquo; that illustrates what things &lt;a href="https://twitter.com/adilaijaz/status/985748670791299072"&gt;most support continuous delivery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Jeff Kelly over on the Built to Adapt blog has a really nice post on how Mercedes-Benz &lt;a href="https://builttoadapt.io/a-unifying-foundation-for-the-customer-journey-at-mercedes-benz-fc8f8877816b"&gt;uses Pivotal Cloud Foundry to handle their usecases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out the following Spring meetup in Minneapolis, MN at 5:30 on April 23, 2018 &lt;a href="https://www.meetup.com/SpringMN/events/246492799/"&gt;on serverless and Spring Cloud Function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The E4Developer blog has a nice post &lt;a href="https://www.e4developer.com/2018/04/14/webflux-and-servicing-client-requests-how-does-it-work/"&gt;on the request processing lifecycle for Spring WebFlux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring and Kotlin ninja Sebastien Deleuze has a nice post on &lt;a href="https://github.com/sdeleuze/webflux-kotlin-web-tests/"&gt;testing reactive Spring WebFlux-based web applications with Spring and Kotlin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Our very own Daniel Frey has a really &lt;a href="https://github.com/dmfrey/event-store-demo"&gt;nice event-sourcing example with Kafka Streams&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mimacom have a very nice post on &lt;a href="https://blog.mimacom.com/spring-cloud-contract/"&gt;using Spring Cloud Contract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love this post on &lt;a href="http://sketchingdev.co.uk/blog/consumer-driven-contracts-by-example.html"&gt;consumer driven contracts (by example) with Spring Cloud Contract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Maciej Walkowiak surfaced an oldie-but-a-goodie: &lt;a href="https://twitter.com/maciejwalkowiak/status/984518778577965056?s=12"&gt;SpringSource co-founder Keith Donald on the origins of SpringSource&lt;/a&gt;, the company eventually accquired by VMWare which ultimately spun out to become a part of Pivotal.&lt;/li&gt;
+  &lt;li&gt;I haven&amp;rsquo;t tried this out yet, &lt;em&gt;but&lt;/em&gt; it looks like &lt;a href="https://twitter.com/springcloud/status/984494029470617608"&gt;you can now add &lt;code&gt;@RefreshScope&lt;/code&gt; to a &lt;code&gt;javax.sql.DataSource&lt;/code&gt; &lt;code&gt;@Bean&lt;/code&gt; definition&lt;/a&gt; and it&amp;rsquo;ll automatically be re-configured? If so, that&amp;rsquo;s &lt;em&gt;super&lt;/em&gt; cool!&lt;/li&gt;
+  &lt;li&gt;Pivotal&amp;rsquo;s own Matthew Parker has a nice &lt;a href="https://t.co/6nVNmnQLvD?amp=1"&gt;post on the benefits of test-driven development&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Google Cloud Platform blog has a &lt;a href="https://cloudplatform.googleblog.com/2018/02/announcing-Spring-Cloud-GCP-integrating-your-favorite-Java-framework-with-Google-Cloud.html?m=1"&gt;nice post on the Spring Cloud GCP support, too&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Spring Cloud GCP starters are &lt;a href="https://twitter.com/snicoll/status/984406909330567168?s=12"&gt;now on the Spring Initializr&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;The Docker blog has a &lt;a href="https://blog.docker.com/2018/03/video-series-modernizing-java-apps-developers-part-3/"&gt;nice post on containerizing Spring Boot applications&lt;/a&gt;. Cool.&lt;/li&gt;
+  &lt;li&gt;The E4developer blog has a worthy read: &lt;a href="https://www.e4developer.com/2018/04/11/getting-reactive-with-spring-boot-2-0-and-reactor/"&gt;&amp;ldquo;Getting Reactive with Spring Boot 2.0 and Reactor.&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Do you have your tickets for &lt;a href="https://twitter.com/springcloud/status/984184114189357057"&gt;the Spring Connect São Paulo event on June 26th? I&amp;rsquo;ll be there and I&amp;rsquo;d love to see you!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RabbitMQ have a nice blog on how &lt;a href="https://twitter.com/springcentral/status/984115737596837889"&gt;they support capturing client-side metrics with Micrometer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a good list on &lt;a href="http://javarevisited.blogspot.com/2018/04/5-spring-framework-books-experienced-Java-developers-2018.html?m=1"&gt;must-read books for Spring developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Christoph Strobl has teased the forthcoming &lt;a href="https://twitter.com/stroblchristoph/status/983975976630673409/photo/1"&gt;Spring Data MongoDB support for transactions and it&amp;rsquo;s exciting&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Wijnand Top has an interesting post on how to use &lt;a href="https://medium.com/@wijnandtop/gitlabs-auto-devops-java-spring-boot-with-quality-control-to-production-in-minutes-using-7afdbc859b9a?source=userActivityShare-a17df5ec14a4-1523428894"&gt;GitLab’s Auto DevOps for a Spring Boot application&lt;/a&gt;. Auto DevOps, as I understand it, is basically a made-to-order continuous delivery platform. This is cool!&lt;/li&gt;
+  &lt;li&gt;Jonatan Reiners has a nice post on &lt;a href="https://kreuzwerker.de/blog/posts/keyvault-with-spring"&gt;using the Azure KeyVault as a property source in Spring Boot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Integration for AWS 2.0.0.M2 and Spring Cloud Stream Kinesis Binder 1.0.0.M2</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/04/17/spring-integration-for-aws-2-0-0-m2-and-spring-cloud-stream-kinesis-binder-1-0-0-m2" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2018-04-16:3253</id>
+    <updated>2018-04-17T12:21:29Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Dear Spring Community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It’s my pleasure to announce Milestone releases for Spring projects supporting &lt;a href="https://aws.amazon.com/"&gt;Amazon Web Services&lt;/a&gt;: &lt;a href="https://github.com/spring-projects/spring-integration-aws"&gt;Spring Integration for AWS&lt;/a&gt; &lt;code&gt;2.0.0.M2&lt;/code&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-aws-kinesis"&gt;Spring Cloud Stream Binder for AWS Kinesis&lt;/a&gt; &lt;code&gt;1.0.0.M2&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Both milestones are available in the &lt;a href="https://repo.spring.io/milestone/"&gt;Spring Milestone&lt;/a&gt; repository and they can be consumed as maven dependencies:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.integration&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-integration-aws&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;2.0.0.M2&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+
+&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-cloud-stream-binder-kinesis&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;1.0.0.M2&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Where the first one is not needed to be includes when the second one is in use.
+The &lt;a href="https://aws.amazon.com/kinesis/"&gt;AWS Kinesis&lt;/a&gt; and &lt;a href="https://aws.amazon.com/dynamodb/"&gt;AWS DynamoDB&lt;/a&gt; Java SDK dependencies are included transitively for AWS Kinesis Binder as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;These Milestones are good effort of the team and some third-party contributors after valuable feedback from the community via StackOverflow questions, Gitter chats, bug reports and feature request.
+So, thank you everyone involved!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here are changes since the previously announced &lt;a href="https://spring.io/blog/2018/02/13/spring-integration-for-aws-2-0-0-m1-and-spring-cloud-stream-kinesis-binder-1-0-0-m1"&gt;Milestone 1&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;KinesisMessageDrivenChannelAdapter&lt;/code&gt; has been improved for fault tolerance when intermittent network errors happen in the AWS Client.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Kinesis &lt;code&gt;Checkpointer&lt;/code&gt; has been improved to be based on the &lt;code&gt;ConcurrentMetadataStore&lt;/code&gt; for better concurrent interactions, especially in cluster environment - consumer groups.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A headers mapping mechanism has been implemented for the &lt;code&gt;SqsMessageHandler&lt;/code&gt; and &lt;code&gt;SnsMessageHandler&lt;/code&gt; - the &lt;code&gt;SqsHeaderMapper&lt;/code&gt; and &lt;code&gt;SnsHeaderMapper&lt;/code&gt; as out-of-the-box implementations, respectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Since AWS Kinesis doesn&amp;#8217;t provide any headers notations, we implemented workaround via &lt;em&gt;embedding headers&lt;/em&gt; into the Kinesis &lt;code&gt;Record&lt;/code&gt; body.
+For this purpose the &lt;code&gt;KinesisMessageHandler&lt;/code&gt; and &lt;code&gt;KinesisMessageDrivenChannelAdapter&lt;/code&gt; should be configured with the &lt;code&gt;OutboundMessageMapper&lt;/code&gt; and &lt;code&gt;InboundMessageMapper&lt;/code&gt;, respectively.
+As a good choice an out-of-the-box Spring Integration &lt;code&gt;EmbeddedJsonHeadersMessageMapper&lt;/code&gt; can be used on both side to carry any desired message headers over AWS Kinesis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;KinesisMessageDrivenChannelAdapter&lt;/code&gt; has also been supplied with the logic to convert records when &lt;code&gt;ListenerMode.batch&lt;/code&gt; is used.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;KinesisMessageChannelBinder&lt;/code&gt; has been updated according the latest changes and fixes in the Spring Cloud Stream and Spring Integration AWS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Also a new &lt;code&gt;rawRecords&lt;/code&gt; listener mode has been introduced.
+By default the Kinesis Binder is configured for &lt;code&gt;record&lt;/code&gt; mode where the message to emit contains payload as &lt;code&gt;byte[]&lt;/code&gt; for the downstream conversion by the &lt;a href="https://spring.io/blog/2018/02/26/spring-cloud-stream-2-0-content-type-negotiation-and-transformation"&gt;Spring Cloud Stream&lt;/a&gt;.
+The &lt;code&gt;batch&lt;/code&gt; mode now produces a &lt;code&gt;List&amp;lt;byte[]&amp;gt;&lt;/code&gt; and this new &lt;code&gt;rawRecords&lt;/code&gt; mode produces a message with a payload as &lt;code&gt;List&amp;lt;Record&amp;gt;&lt;/code&gt; - and all the conversion logic to business model is up to end-user in the target &lt;code&gt;@StreamListener&lt;/code&gt; method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As usual any feedback, feature ideas, critics, bug reports and questions are welcome via appropriate communication channels!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-gcp"&gt;Spring Integration AWS Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-aws-kinesis"&gt;Spring Cloud Stream Binder for AWS Kinesis Project Page&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Chat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Task 2.0.0.RC1 is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2018/04/16/spring-cloud-task-2-0-0-rc1-is-now-available" />
@@ -1089,56 +1232,5 @@ inputSource.poll(System.out::println);
 &lt;/ul&gt;
 &lt;p&gt;Spring Boot 2.0.1 and 1.5.11 (superseded by 1.5.12 with CVE-2018-1275), that match the above Spring Framework versions, were &lt;a href="https://spring.io/blog/2018/04/05/spring-boot-2-0-1-available-now"&gt;released today&lt;/a&gt;, and are now also available for use.&lt;/p&gt;
 &lt;p&gt;Please, review the information in the CVE reports and upgrade immediately. &lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.0.1 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/04/05/spring-boot-2-0-1-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2018-04-05:3233</id>
-    <updated>2018-04-05T14:21:00Z</updated>
-    <content type="html">&lt;p&gt;Hot on the heels of &lt;a href="https://spring.io/blog/2018/04/05/spring-boot-1-5-11-available-now"&gt;Spring Boot 1.5.11&lt;/a&gt;, Spring Boot 2.0.1 is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The first maintenance release of Spring Boot 2 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/98?closed=1"&gt;over 160 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;p&gt;Note that the Spring Framework versions included in both Spring Boot releases contain fixes that address multiple vulnerability reports. Please see this &lt;a href="https://spring.io/blog/2018/04/05/multiple-cve-reports-published-for-the-spring-framework"&gt;blog post&lt;/a&gt; for more details.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for Apache Hadoop project End-Of-Life announcement</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/04/05/spring-for-apache-hadoop-project-end-of-life-announcement" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Thomas Risberg</name>
-    </author>
-    <id>tag:spring.io,2018-04-05:3234</id>
-    <updated>2018-04-05T13:44:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
-&lt;p&gt;The Spring team hereby announces that the &lt;a href="https://projects.spring.io/spring-hadoop"&gt;Spring for Apache Hadoop project&lt;/a&gt; will reach End-Of-Life status twelve months from today on April 5th, 2019. We will publish occasional 2.5.x maintenance releases as needed up until that point and will then move the project to the attic. The current Spring for Apache Hadoop 2.5.0 release is built using Apache Hadoop version 2.7.3 and should be compatible with the latest releases of the most popular Hadoop distributions.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/spring-cloud-stream-app-starters/hdfs"&gt;Spring Cloud Stream App Starter - HDFS Sink&lt;/a&gt; applications rely on the Spring for Apache Hadoop project. Moving forward, we will port the required capabilities directly onto the HDFS App Starter project. Spring Cloud Data Flow would continue to orchestrate the HDFS sink applications into coherent streaming pipelines.&lt;/p&gt;
-&lt;p&gt;We recommend that all users switch to use Spring Cloud Data Flow and Spring Cloud Stream App Starters HDFS sinks for any future projects.&lt;/p&gt;
-&lt;p&gt;All the best,&lt;/p&gt;
-&lt;p&gt;Thomas &amp;amp; Janne&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.0.4 and 4.2.5 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/04/05/spring-security-5-0-4-and-4-2-5-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2018-04-04:3229</id>
-    <updated>2018-04-05T12:41:32Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce the releases of Spring Security 5.0.4 and 4.2.5. Both releases primarily deliver bug fixes and dependency version updates along with some minor improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For a complete list of changes, please refer to the 5.0.4 &lt;a href="https://github.com/spring-projects/spring-security/milestone/112?closed=1"&gt;changelog&lt;/a&gt; and 4.2.5 &lt;a href="https://github.com/spring-projects/spring-security/milestone/109?closed=1"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

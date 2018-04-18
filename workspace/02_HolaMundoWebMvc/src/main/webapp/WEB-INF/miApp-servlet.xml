@@ -40,5 +40,28 @@
 	 -->
 	 
 	<context:component-scan base-package="es.igae.services"/>
+	
+	<!-- Busqueda de Beans de la capa de Persistencia -->
+
+	<context:component-scan base-package="es.igae.persistence.jdbctemplate"/>
+	
+	<!-- Alternativa, para poder definir el Bean de tipo JDBCTemplate asociado al ClienteJdbcTemplateDao -->
+	<!-- 
+	<bean class="es.igae.persistence.jdbctemplate.ClienteJdbcTemplateDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"/>
+		<property name="rowMapper" ref="rowMapper"/>
+	</bean>
+	-->
+	
+	<bean class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url" value="jdbc:derby://localhost:1527/jndi"/>
+		<property name="username" value="admin"/>
+		<property name="password" value="admin"/>
+		<property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
+	</bean>
 
 </beans>
